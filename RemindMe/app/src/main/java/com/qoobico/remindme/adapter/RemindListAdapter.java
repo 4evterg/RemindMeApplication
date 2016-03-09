@@ -38,6 +38,10 @@ public class RemindListAdapter extends RecyclerView.Adapter<RemindListAdapter.Re
         return data.size();
     }
 
+    public void setData(List<RemindDTO> data) {
+        this.data = data;
+    }
+
     public static class RemindViewHolder extends RecyclerView.ViewHolder {
         CardView cardView;
         TextView title;
